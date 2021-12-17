@@ -44,7 +44,7 @@ def projection(img, name, device='cuda'):
     img = transform(img).unsqueeze(0).to(device)
     avg_image = get_avg_image(net, device)
     result_batch, result_latents = run_on_batch(img, net, opts, avg_image)
-    final_latent = results_latents[0][-1]
+    final_latent = result_latents[0][-1]
     result_file = {}
     result_file['latent'] = final_latent
     torch.save(result_file, name)
