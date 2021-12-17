@@ -13,9 +13,17 @@ import scipy.ndimage
 
 
 google_drive_paths = {
-    "stylegan2-ffhq-config-f.pt": "https://drive.google.com/uc?id=1Yr7KuD959btpmcKGAUsbAk5rPjX2MytK",
-    "dlibshape_predictor_68_face_landmarks.dat": "https://drive.google.com/uc?id=11BDmNKS1zxSZxkgsEvQoKgFd8J264jKp",
-    "e4e_ffhq_encode.pt": "https://drive.google.com/uc?id=1o6ijA3PkcewZvwJJ73dJ0fxhndn0nnh7"
+    "models/stylegan2-ffhq-config-f.pt": "https://drive.google.com/uc?id=1Yr7KuD959btpmcKGAUsbAk5rPjX2MytK",
+    "models/dlibshape_predictor_68_face_landmarks.dat": "https://drive.google.com/uc?id=11BDmNKS1zxSZxkgsEvQoKgFd8J264jKp",
+    "models/e4e_ffhq_encode.pt": "https://drive.google.com/uc?id=1o6ijA3PkcewZvwJJ73dJ0fxhndn0nnh7",
+    "models/restyle_psp_ffhq_encode.pt": "https://drive.google.com/uc?id=1nbxCIVw9H3YnQsoIPykNEFwWJnHVHlVd",
+    "models/arcane_caitlyn.pt": "https://drive.google.com/uc?id=9BWmwQN7upoiXXSiAO6QCf1gAZ5Objh-",
+    "models/arcane_jinx_preserve_color.pt": "https://drive.google.com/uc?id=1jElwHxaYPod5Itdy18izJk49K1nl4ney",
+    "models/arcane_jinx.pt": "https://drive.google.com/uc?id=1quQ8vPjYpUiXM4k1_KIwP4EccOefPpG_",
+    "models/archer.pt": "https://drive.google.com/uc?id=1LOR1ucQ0SbNkTc-Jled_z4DmhvMVmBGZ",
+    "models/disney.pt": "https://drive.google.com/uc?id=1zbE2upakFUAx8ximYnLofFwfT8MilqJA",
+    "models/jojo.pt": "https://drive.google.com/uc?id=13cR2xjIBj8Ga5jMO7gtxzIJj2PDsBYK4",
+    "models/paint.pt": "https://drive.google.com/uc?id=1dZ3kA3osrVQ0iuJfmONj3w8vz92r9MM3",
 }
 
 @torch.no_grad()
@@ -112,8 +120,8 @@ def align_face(filepath, output_size=1024, transform_size=4096, enable_padding=T
     :param filepath: str
     :return: PIL Image
     """
-    ensure_checkpoint_exists("dlibshape_predictor_68_face_landmarks.dat")
-    predictor = dlib.shape_predictor("dlibshape_predictor_68_face_landmarks.dat")
+    ensure_checkpoint_exists("models/dlibshape_predictor_68_face_landmarks.dat")
+    predictor = dlib.shape_predictor("models/dlibshape_predictor_68_face_landmarks.dat")
     lm = get_landmark(filepath, predictor)
 
     lm_chin = lm[0: 17]  # left-right

@@ -11,7 +11,7 @@ from util import *
 
 @ torch.no_grad()
 def projection(img, name, device='cuda'):
-    model_path = 'e4e_ffhq_encode.pt'
+    model_path = 'models/e4e_ffhq_encode.pt'
     ensure_checkpoint_exists(model_path)
     ckpt = torch.load(model_path, map_location='cpu')
     opts = ckpt['opts']
@@ -33,4 +33,4 @@ def projection(img, name, device='cuda'):
     result_file = {}
     result_file['latent'] = w_plus[0]
     torch.save(result_file, name)
-
+    return w_plus[0]
