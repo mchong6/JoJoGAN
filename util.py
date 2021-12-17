@@ -79,7 +79,7 @@ def display_image(image, size=None, mode='nearest', unnorm=False, title=''):
         image = F.interpolate(image, size=(size,size), mode=mode)
     if image.dim() == 4:
         image = image[0]
-    image = ((image.clamp(-1,1)+1)/2).permute(1, 2, 0).detach().numpy()
+    image = image.permute(1, 2, 0).detach().numpy()
     plt.figure()
     plt.title(title)
     plt.axis('off')
@@ -194,3 +194,5 @@ def align_face(filepath, output_size=1024, transform_size=4096, enable_padding=T
     # Return aligned image.
     return img
 
+def strip_path_extension(path):
+   return  os.path.splitext(path)[0]
