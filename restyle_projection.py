@@ -48,5 +48,5 @@ def projection(img, name, device='cuda'):
     result_file = {}
     result_file['latent'] = final_latent
     torch.save(result_file, name)
-    return 
+    return final_latent
 
