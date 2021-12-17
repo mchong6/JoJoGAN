@@ -20,13 +20,13 @@ def get_avg_image(net, device):
     return avg_image
 
 @ torch.no_grad()
-def projection(img, name, device='cuda'):
+def projection(img, name, device='cuda', n_iters=5):
     model_path = 'models/restyle_psp_ffhq_encode.pt'
     ensure_checkpoint_exists(model_path)
     ckpt = torch.load(model_path, map_location='cpu')
     opts = ckpt['opts']
     opts['checkpoint_path'] = model_path
-    opts['n_iters_per_batch'] = 5
+    opts['n_iters_per_batch'] = n_iters
     opts['device'] = device
     opts= Namespace(**opts)
     opts.resize_outputs = False

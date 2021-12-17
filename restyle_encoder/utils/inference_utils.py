@@ -39,7 +39,7 @@ def run_on_batch(inputs, net, opts, avg_image):
         # store intermediate outputs
         for idx in range(inputs.shape[0]):
             results_batch[idx].append(y_hat[idx])
-            results_latent[idx].append(latent[idx].cpu().numpy())
+            results_latent[idx].append(latent[idx])
 
         # resize input to 256 before feeding into next iteration
         if opts.dataset_type == "cars_encode":

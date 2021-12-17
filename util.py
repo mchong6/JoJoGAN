@@ -10,7 +10,7 @@ import math
 import torchvision
 import scipy
 import scipy.ndimage
-
+import torchvision.transforms as transforms
 
 google_drive_paths = {
     "models/stylegan2-ffhq-config-f.pt": "https://drive.google.com/uc?id=1Yr7KuD959btpmcKGAUsbAk5rPjX2MytK",
@@ -82,6 +82,8 @@ def load_source(files, generator, device='cuda'):
 
 def display_image(image, size=None, mode='nearest', unnorm=False, title=''):
     # image is [3,h,w] or [1,3,h,w] tensor [0,1]
+    if not isinstance(image, torch.Tensor):
+        image = transforms.ToTensor()(image).unsqueeze(0)
     if image.is_cuda:
         image = image.cpu()
     if size is not None and image.size(-1) != size:
