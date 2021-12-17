@@ -31,6 +31,7 @@ def projection(img, name, device='cuda'):
     img = transform(img).unsqueeze(0).to(device)
     images, w_plus = net(img, randomize_noise=False, return_latents=True)
     result_file = {}
+    os.makedirs('./inversion_codes', exist_ok=True)
     filename = './inversion_codes/' + name + '.pt'
     result_file['latent'] = w_plus[0]
     torch.save(result_file, filename)
