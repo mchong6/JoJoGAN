@@ -17,13 +17,18 @@ google_drive_paths = {
     "models/dlibshape_predictor_68_face_landmarks.dat": "https://drive.google.com/uc?id=11BDmNKS1zxSZxkgsEvQoKgFd8J264jKp",
     "models/e4e_ffhq_encode.pt": "https://drive.google.com/uc?id=1o6ijA3PkcewZvwJJ73dJ0fxhndn0nnh7",
     "models/restyle_psp_ffhq_encode.pt": "https://drive.google.com/uc?id=1nbxCIVw9H3YnQsoIPykNEFwWJnHVHlVd",
-    "models/arcane_caitlyn.pt": "https://drive.google.com/uc?id=9BWmwQN7upoiXXSiAO6QCf1gAZ5Objh-",
+    "models/arcane_caitlyn.pt": "https://drive.google.com/uc?id=14iF1mSqLSz0azF5uV2lFYUnUlxBvNu4k",
+    "models/arcane_caitlyn_preserve_color.pt": "https://drive.google.com/uc?id=14gFKwoEuBxj0W9r0sl24ji5OET1OFbwk",
     "models/arcane_jinx_preserve_color.pt": "https://drive.google.com/uc?id=1jElwHxaYPod5Itdy18izJk49K1nl4ney",
     "models/arcane_jinx.pt": "https://drive.google.com/uc?id=1quQ8vPjYpUiXM4k1_KIwP4EccOefPpG_",
     "models/archer.pt": "https://drive.google.com/uc?id=1LOR1ucQ0SbNkTc-Jled_z4DmhvMVmBGZ",
+    "models/archer_preserve_color.pt": "https://drive.google.com/uc?id=1pnABUdsoURkqD8Z5Nf6xXCb9EVwUdXZ5",
     "models/disney.pt": "https://drive.google.com/uc?id=1zbE2upakFUAx8ximYnLofFwfT8MilqJA",
+    "models/disney_preserve_color.pt": "https://drive.google.com/uc?id=1Bnh02DjfvN_Wm8c4JdOiNV4q9J7Z_tsi",
     "models/jojo.pt": "https://drive.google.com/uc?id=13cR2xjIBj8Ga5jMO7gtxzIJj2PDsBYK4",
+    "models/jojo_preserve_color.pt": "https://drive.google.com/uc?id=1ZRwYLRytCEKi__eT2Zxv1IlV6BGVQ_K2",
     "models/paint.pt": "https://drive.google.com/uc?id=1dZ3kA3osrVQ0iuJfmONj3w8vz92r9MM3",
+    "models/paint_preserve_color.pt": "https://drive.google.com/uc?id=1WHCoBHsklcFX_SK6kobln2WGIOCiEI1_",
 }
 
 @torch.no_grad()
