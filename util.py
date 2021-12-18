@@ -29,6 +29,10 @@ google_drive_paths = {
     "models/jojo_preserve_color.pt": "https://drive.google.com/uc?id=1ZRwYLRytCEKi__eT2Zxv1IlV6BGVQ_K2",
     "models/paint.pt": "https://drive.google.com/uc?id=1dZ3kA3osrVQ0iuJfmONj3w8vz92r9MM3",
     "models/paint_preserve_color.pt": "https://drive.google.com/uc?id=1WHCoBHsklcFX_SK6kobln2WGIOCiEI1_",
+    "models/pinup.pt": "https://drive.google.com/uc?id=1dZ3kA3osrVQ0iuJfmONj3w8vz92r9MM3",
+    "models/pinup_preserve_color.pt": "https://drive.google.com/uc?id=1RlM0tWCZH78j4FHDDDRzAR5qaWec-aaG",
+    "models/dio.pt": "https://drive.google.com/uc?id=1d2XxINh_hylKevkfq81cg-RQBObzLkAd",
+    "models/dio_preserve_color.pt": "https://drive.google.com/uc?id=1iB8CN9E7I3DoQriP7Yq1zZx244b-JEaa",
 }
 
 @torch.no_grad()
