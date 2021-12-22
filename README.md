@@ -13,7 +13,7 @@ that approximate paired data. We then encourage the StyleGAN to generalize so th
 to all other images.
 
 ## Updates
-* `2021-12-22` Added pydrive authentication to avoid download limits from gdrive!
+* `2021-12-22` Added pydrive authentication to avoid download limits from gdrive! Fixed running on cpu on colab.
 
 ## How to use
 Everything to get started is in the [colab notebook](https://colab.research.google.com/github/mchong6/JoJoGAN/blob/main/stylize.ipynb).
@@ -24,4 +24,4 @@ If you use this code or ideas from our paper, please cite our paper:
 ```
 
 ## Acknowledgments
-This code borrows from [StyleGAN2 by rosalinity](https://github.com/rosinality/stylegan2-pytorch), [e4e](https://github.com/omertov/encoder4editing) and [ReStyle](https://github.com/yuval-alaluf/restyle-encoder). Some snippets of colab code from [StyleGAN-NADA](https://github.com/rinongal/StyleGAN-nada)
+This code borrows from [StyleGAN2 by rosalinity](https://github.com/rosinality/stylegan2-pytorch), [e4e](https://github.com/omertov/encoder4editing). Some snippets of colab code from [StyleGAN-NADA](https://github.com/rinongal/StyleGAN-nada)
