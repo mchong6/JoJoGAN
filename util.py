@@ -109,6 +109,7 @@ def get_landmark(filepath, predictor):
 
     img = dlib.load_rgb_image(filepath)
     dets = detector(img, 1)
+    assert len(dets) > 0, "Face not detected, try another face image"
 
     for k, d in enumerate(dets):
         shape = predictor(img, d)
