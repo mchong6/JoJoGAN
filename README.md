@@ -1,7 +1,7 @@
 # JoJoGAN: One Shot Face Stylization
 ![](teaser.jpg)
 
-This is the PyTorch implementation of [JoJoGAN: One Shot Face Stylization](https://arxiv.org/abs/2111.01619). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mchong6/SOAT/blob/main/infinity.ipynb)
+This is the PyTorch implementation of [JoJoGAN: One Shot Face Stylization](https://arxiv.org/abs/2111.01619). [![Open In Colab](https://colab.research.google.com/github/mchong6/JoJoGAN/blob/main/stylize.ipynb)](https://colab.research.google.com/github/mchong6/SOAT/blob/main/infinity.ipynb)
 
 
 >**Abstract:**<br>
@@ -15,7 +15,7 @@ to all other images.
 
 
 ## How to use
-Everything to get started is in the [colab notebook](https://colab.research.google.com/github/mchong6/SOAT/blob/main/infinity.ipynb).
+Everything to get started is in the [colab notebook](https://colab.research.google.com/github/mchong6/JoJoGAN/blob/main/stylize.ipynb).
 
 ## Citation
 If you use this code or ideas from our paper, please cite our paper:
