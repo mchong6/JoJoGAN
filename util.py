@@ -21,16 +21,14 @@ google_drive_paths = {
     "models/arcane_caitlyn_preserve_color.pt": "https://drive.google.com/uc?id=1cUTyjU-q98P75a8THCaO545RTwpVV-aH",
     "models/arcane_jinx_preserve_color.pt": "https://drive.google.com/uc?id=1jElwHxaYPod5Itdy18izJk49K1nl4ney",
     "models/arcane_jinx.pt": "https://drive.google.com/uc?id=1quQ8vPjYpUiXM4k1_KIwP4EccOefPpG_",
-    "models/archer.pt": "https://drive.google.com/uc?id=1LOR1ucQ0SbNkTc-Jled_z4DmhvMVmBGZ",
-    "models/archer_preserve_color.pt": "https://drive.google.com/uc?id=1pnABUdsoURkqD8Z5Nf6xXCb9EVwUdXZ5",
     "models/disney.pt": "https://drive.google.com/uc?id=1zbE2upakFUAx8ximYnLofFwfT8MilqJA",
     "models/disney_preserve_color.pt": "https://drive.google.com/uc?id=1Bnh02DjfvN_Wm8c4JdOiNV4q9J7Z_tsi",
     "models/jojo.pt": "https://drive.google.com/uc?id=13cR2xjIBj8Ga5jMO7gtxzIJj2PDsBYK4",
     "models/jojo_preserve_color.pt": "https://drive.google.com/uc?id=1ZRwYLRytCEKi__eT2Zxv1IlV6BGVQ_K2",
-    "models/paint.pt": "https://drive.google.com/uc?id=1dZ3kA3osrVQ0iuJfmONj3w8vz92r9MM3",
-    "models/paint_preserve_color.pt": "https://drive.google.com/uc?id=1WHCoBHsklcFX_SK6kobln2WGIOCiEI1_",
-    "models/dio.pt": "https://drive.google.com/uc?id=1d2XxINh_hylKevkfq81cg-RQBObzLkAd",
-    "models/dio_preserve_color.pt": "https://drive.google.com/uc?id=1iB8CN9E7I3DoQriP7Yq1zZx244b-JEaa",
+    "models/jojo_yasuho.pt": "https://drive.google.com/uc?id=1grZT3Gz1DLzFoJchAmoj3LoM9ew9ROX_",
+    "models/jojo_yasuho_preserve_color.pt": "https://drive.google.com/uc?id=1SKBu1h0iRNyeKBnya_3BBmLr4pkPeg_L",
+    "models/supergirl.pt": "https://drive.google.com/uc?id=1L0y9IYgzLNzB-33xTpXpecsKU-t9DpVC",
+    "models/supergirl_preserve_color.pt": "https://drive.google.com/uc?id=1VmKGuvThWHym7YuayXxjv0fSn32lfDpE",
 }
 
 @torch.no_grad()
