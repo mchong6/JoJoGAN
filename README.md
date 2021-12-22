@@ -1,7 +1,7 @@
 # JoJoGAN: One Shot Face Stylization
 ![](teaser.jpg)
 
-This is the PyTorch implementation of [JoJoGAN: One Shot Face Stylization](https://arxiv.org/abs/2111.01619). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mchong6/JoJoGAN/blob/main/stylize.ipynb)
+This is the PyTorch implementation of [JoJoGAN: One Shot Face Stylization](). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mchong6/JoJoGAN/blob/main/stylize.ipynb)
 
 
 >**Abstract:**<br>
