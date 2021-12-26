@@ -3,7 +3,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mchong6/JoJoGAN/blob/main/stylize.ipynb)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/JoJoGAN)
 
-![](teaser.jpg)
+![](teasers/teaser.jpg)
 
 This is the PyTorch implementation of [JoJoGAN: One Shot Face Stylization](https://arxiv.org/abs/2112.11641).
 
@@ -17,9 +17,10 @@ that approximate paired data. We then encourage the StyleGAN to generalize so th
 to all other images.
 
 ## Updates
-* `2021-12-26` Added wandb logging. Fixed finetuning bug which begins finetuning from previously loaded checkpoint instead of the base face model.
+* `2021-12-26` Added wandb logging. Fixed finetuning bug which begins finetuning from previously loaded checkpoint instead of the base face model. Added art model
+<br><img src="teasers/arcane.gif" width="50%" height="50%"/>
 * `2021-12-25` Added arcane_multi model which is trained on 4 arcane faces instead of 1 (if anyone has more clean data, let me know!). Better preserves features.
-<br><img src="arcane.gif" width="50%" height="50%"/>
+<br><img src="teasers/arcane.gif" width="50%" height="50%"/>
 * `2021-12-23` Paper is uploaded to [arxiv](https://arxiv.org/abs/2112.11641).
 * `2021-12-22` Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try it out [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/JoJoGAN)
 * `2021-12-22` Added pydrive authentication to avoid download limits from gdrive! Fixed running on cpu on colab.
