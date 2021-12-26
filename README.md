@@ -14,6 +14,7 @@ that approximate paired data. We then encourage the StyleGAN to generalize so th
 to all other images.
 
 ## Updates
+* `2021-12-26` Added wandb logging. Fixed finetuning bug which begins finetuning from previously loaded checkpoint instead of the base face model.
 * `2021-12-25` Added arcane_multi model which is trained on 4 arcane faces instead of 1 (if anyone has more clean data, let me know!). Better preserves features.
 <br><img src="arcane.gif" width="50%" height="50%"/>
 * `2021-12-23` Paper is uploaded to [arxiv](https://arxiv.org/abs/2112.11641).
