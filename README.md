@@ -19,6 +19,8 @@ that approximate paired data. We then encourage the StyleGAN to generalize so th
 to all other images.
 
 ## Updates
+* `2022-02-03` Updated the paper. Improved stylization quality using discriminator perceptual loss. Added sketch model
+<br><img src="teasers/sketch.gif" width="50%" height="50%"/>
 * `2021-12-26` Added wandb logging. Fixed finetuning bug which begins finetuning from previously loaded checkpoint instead of the base face model. Added art model
 <br><img src="teasers/art.gif" width="50%" height="50%"/>
 * `2021-12-25` Added arcane_multi model which is trained on 4 arcane faces instead of 1 (if anyone has more clean data, let me know!). Better preserves features <details><img src="teasers/arcane.gif" width="50%" height="50%"/></details>
