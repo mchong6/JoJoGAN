@@ -1,0 +1,21 @@
+build:
+  gpu: true
+  system_packages:
+      - "libgl1-mesa-glx"
+      - "cmake" 
+  python_version: "3.7.12"
+  python_packages:
+      - "ninja==1.10.2.3"
+      - "torch==1.10.0"
+      - "torchvision==0.11.1"
+      - "dlib==19.18.0"
+      - "tqdm==4.62.3"
+      - "gdown==3.6.4"
+      - "scikit-learn==0.22"
+      - "scipy==1.4.1"
+      - "lpips==0.1.4"
+      - "opencv-python==4.5.5.62"
+      - "wandb==0.12.9"
+      - "numpy==1.19.5"
+      - "matplotlib==3.2.2"
+predict: "predict.py:Predictor"
